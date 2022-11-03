@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array Window</title>
+       <script>
+           var fruits=['Apple','Banana','Cherry'];
+           function insertData(){
+              var f=prompt('Search '+fruits);
+              var pos=fruits.indexOf(f);
+              if(pos>=0){
+                var f2=prompt(' insert fruit: ');
+                fruits.splice(pos,0,f2);
+                alert(fruits);
+              }else
+                 alert(f+" not found");
+           }
+          
+       </script>
+    </head>
+    <body>
+        <button onclick="insertData()">Array push</button><p>
+        
+    </body>
+</html>
